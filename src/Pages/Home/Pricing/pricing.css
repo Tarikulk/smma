@@ -1,0 +1,267 @@
+.pricing-label{
+    text-align: center;
+}
+
+.pricing-text{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.pricing-wrapper{
+    margin-bottom: 80px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    width: 100%;  
+}
+
+ 
+.pricing-wrapper .table{ 
+    background: linear-gradient(135deg, #1a1a2e, #622774);
+    width: 30%;
+    padding: 30px;
+    position: relative;
+    border-radius: 45px;
+    box-shadow: 0 5px 10px rgba(26, 24, 24, 0.966);
+    transition: all 1s ease-in-out;
+}
+
+.pricing-wrapper .table:hover{
+    border: 1px solid #00A1FF;
+}
+
+.table .price-section{
+    display: flex;
+    justify-content: center;
+}
+
+.table .price-area{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.tag{
+    text-align: center;
+    color: grey;
+}
+
+p.des{
+    color: grey;
+    padding-bottom: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.table.standard{
+    margin: -20px;
+}
+
+.price-area .inner-area{
+    height: 100%;
+    width: 100%; 
+    text-align: center;
+    color: #fff;
+    position: relative;
+    line-height: 30px;
+    top: 20px;
+}
+
+.price-area .inner-area .text{
+    font-size: 25px;
+    font-weight: 400;
+    position: absolute;
+    top: 6px;
+    left: 15px;
+}
+
+.price-area .inner-area .price{
+    font-size: 45px;
+    font-weight: 500;
+    margin-left: 16px;
+}
+
+.price-area .inner-area .price span{
+    font-size: 20px;
+    margin-left: 80px;
+}
+
+.table .package-name{
+    width: 100%;
+    height: 2px;
+    margin: 35px 0;
+    position: relative;
+}
+
+.table .features li{
+    margin-bottom: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features li .list-name{
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.features li .icon.check{
+    color: #2db94d;
+}
+
+.features li .icon.cross{
+    color: #cd3241;
+}
+
+.table .pricing-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.table .pricing-btn button{
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.table .pricing-btn button:hover{
+    border-radius: 5px;
+}
+ 
+.basic ::selection, 
+.basic .price-area, 
+.basic .inner-area, 
+.basic .head_tab h2{
+    color: #00A1FF;
+    text-align: center;
+}
+
+.basic .pricing-btn button{
+    background-color: #00A1FF;
+    color: #fff;
+    margin-top: -75px;
+}
+
+.basic .pricing-btn button:hover{
+    background-color: rgba(240, 101, 36);
+    color: #fff;
+}
+
+.standard ::selection, 
+.standard .price-area, 
+.standard .inner-area, 
+.standard .head_tab h2{
+    color: #ba24f0;
+    text-align: center;
+}
+
+.standard .pricing-btn button{
+    background-color: #ba24f0;
+    color: #fff;
+    margin-top: -75px;
+}
+
+.standard .pricing-btn button:hover{
+    background-color: rgba(240, 101, 36);
+    color: #fff;
+}
+
+
+.premium ::selection, 
+.premium .price-area, 
+.premium .inner-area, 
+.premium .head_tab h2{
+    color: #f5b55a;
+    text-align: center;
+}
+
+.premium .pricing-btn button{
+    background-color: #f5b55a;
+    color: #fff;
+    margin-top: -75px;
+}
+
+.premium .pricing-btn button:hover{
+    background-color: rgba(240, 101, 36);
+    color: #fff;
+}
+
+.see-more{
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 756px){
+    .pricing-wrapper .table{
+        width: 100%;
+    }
+
+    .table.standard{
+        margin: 40px 0px;
+    }
+
+    .table.premium{
+        margin: 0px;
+    }
+
+}
+
+::selection{
+    color: #fff;
+}
+
+.table .ribbon{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    overflow: hidden;
+}
+
+.table .ribbon::before,
+.table .ribbon::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    display: block;
+    border: 7px solid #ba24f0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.table .ribbon::before{
+    top: 0px;
+    right: 15px;
+}
+
+.table .ribbon::after{
+    bottom: 15px;
+    left: 0px;
+}
+
+.table .ribbon span{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    transform: rotate(-45deg);
+    width: 200px;
+    background: #ba24f0;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}

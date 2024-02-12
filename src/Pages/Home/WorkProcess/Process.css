@@ -1,0 +1,34 @@
+
+.process-banner{
+   margin-bottom: 30px;
+  }
+  
+  .process{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+  }
+  
+  .process::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../../Assets/images/process-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  .process-item .item-icon{
+    margin-inline: auto;
+    filter: var(--shadow-1);
+  }
+  
+  .process-item .item-title{
+    margin-block: 20px 10px;
+  }
