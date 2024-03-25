@@ -203,6 +203,12 @@ p.des{
     text-align: center;
 }
 
+@media only screen and (max-width: 900px) and (min-width: 750px ){
+    .table{
+        flex-basis: 40%;
+    }
+}
+
 @media (max-width: 756px){
     .pricing-wrapper .table{
         width: 100%;
